@@ -2,7 +2,7 @@ const Calculator = require('./calculator.js');
 
 const calculator = new Calculator();
 
-describe('calculator', () => {
+describe('calculator add method', () => {
   test('add', () => {
     expect(calculator.add(8, 2)).toBe(10);
   });
@@ -14,7 +14,9 @@ describe('calculator', () => {
   test('add', () => {
     expect(calculator.add(50, 75)).toBe(125);
   });
+});
 
+describe('calculator subtract method', () => {
   test('subtract', () => {
     expect(calculator.subtract(120, 98)).toBe(22);
   });
@@ -26,7 +28,9 @@ describe('calculator', () => {
   test('subtract', () => {
     expect(calculator.subtract(25, 8)).toBe(17);
   });
+});
 
+describe('calculator divide method', () => {
   test('divide', () => {
     expect(calculator.divide(50, 5)).toBe(10);
   });
@@ -38,7 +42,9 @@ describe('calculator', () => {
   test('divide', () => {
     expect(calculator.divide(64, 2)).toBe(32);
   });
+});
 
+describe('calculator multiply method', () => {
   test('multiply', () => {
     expect(calculator.multiply(30, 3)).toBe(90);
   });
